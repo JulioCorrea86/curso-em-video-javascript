@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando meu primeiro script - Módulo 1</title>
+    <link rel="shortcut icon" href="../curso-em-video-html5-css3/imagens/favicon-2.ico" type="image/x-icon">
+    
+    <style>
+        body {
+            background-color: rgb(147, 147, 250);
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        var nome = window.prompt('Qual é o seu nome?')
+        var salario = Number(window.prompt('Qual é o seu salário?'))
+        document.write(`Olá ${nome}, seu salário em reais é ${salario.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}.`)
+
+        /*
+        -- Fromatando Strings --
+        var s = 'JavaScript'
+        s.length - retorna quantos caracteres a string tem
+        s.toUpperCase() - tudo para MAIÚSCULAS
+        s.toLowerCase() - tudo para minúsculas
+        */
+    </script>
+    
+</body>
+</html>

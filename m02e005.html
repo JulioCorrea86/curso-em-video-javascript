@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Criando meu primeiro script - Módulo 1</title>
+    <title>Converter string para valor monetário - Módulo B</title>
     <link rel="shortcut icon" href="../curso-em-video-html5-css3/imagens/favicon-2.ico" type="image/x-icon">
     
     <style>
@@ -21,13 +21,12 @@
         var salario = Number(window.prompt('Qual é o seu salário?'))
         document.write(`Olá ${nome}, seu salário em reais é ${salario.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}.`)
 
-        /*
-        -- Fromatando Strings --
-        var s = 'JavaScript'
-        s.length - retorna quantos caracteres a string tem
-        s.toUpperCase() - tudo para MAIÚSCULAS
-        s.toLowerCase() - tudo para minúsculas
-        */
+       /*
+       currency: 'USD' - converter para dólar
+       currency: 'EUR' - converter para euro
+       etc...
+       */
+
     </script>
     
 </body>
